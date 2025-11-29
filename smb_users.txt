@@ -1,5 +1,5 @@
 msfadmin
 user
-nobody
-root
-admin
+password
+service
+
